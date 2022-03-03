@@ -4,4 +4,4 @@ This website serves as my professional portfolio as a web developer. It contains
 
 ![website example](./Assets/Images/Website_Screenshot.png)
 
-[An internal link](./index.html)
+[Website link](./index.html)
