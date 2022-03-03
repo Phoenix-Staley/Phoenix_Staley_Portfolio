@@ -1,7 +1,12 @@
+/* This applies the default font, text color, and margin size */
 * {
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
     margin: 0;
+}
+
+body {
+    background-color: #121212;
 }
 
 .header {
@@ -12,6 +17,7 @@
     font-size: xx-large;
 }
 
+/* This hides a shorter h2 that replaces the main h2 "Phoenix Staley - Web developer" on small devices */
 .short-header {
     display: none;
 }
@@ -47,10 +53,7 @@
     border-bottom: lightblue solid 2px;
 }
 
-.dark-background {
-    background-color: #121212;
-}
-
+/* This formats the section with the <DEVELOPER> image */
 .hero {
     position: relative;
     height: 400px;
@@ -99,12 +102,6 @@
     flex-direction: row;
 }
 
-.project-image:hover {
-    filter: grayscale(0%);
-    animation-name: grayscale-in;
-    animation-duration: 0.5s;
-}
-
 .project-image {
     filter: grayscale(50%);
     animation-name: grayscale-out;
@@ -114,6 +111,12 @@
     max-height: 100%;
     border-radius: 15px;
     display: inline-block;
+}
+
+.project-image:hover {
+    filter: grayscale(0%);
+    animation-name: grayscale-in;
+    animation-duration: 0.5s;
 }
 
 @keyframes grayscale-in {
@@ -126,19 +129,18 @@
     to {filter: grayscale(50%);}
 }
 
+/* This formats the project links */
 .projects a {
     max-width: 29%;
     position: relative;
 }
 
+/* This makes the first project link larger than the rest */
 a:first-child {
     max-width: 100%;
 }
 
-.main-project {
-    max-width: 100%;
-}
-
+/* This formats the headers attached to the project links */
 .project-title {
     position: absolute;
     bottom: 10%;
@@ -149,9 +151,9 @@ a:first-child {
     padding: 5px 5%;
 }
 
+/* This formats the main project slightly larger */
 a:first-child .project-title {
     font-size: xx-large;
-    bottom: 10%;
 }
 
 .pineapple-shirt {
@@ -163,23 +165,17 @@ a:first-child .project-title {
     margin: 100px;
 }
 
+/* This formats the divs containing the content of each main section */
 .content {
     width: 66%;
 }
 
-/* .about-me {
-    padding-bottom: 2%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: larger;
-} */
-
-.main-section .content p {
+.content p {
     width: 84%;
     font-size: large;
 }
 
+/* This formats the headings such as "About me", "Projects", etc. */
 .section-heading {
     font-size: x-large;
     padding: 1% 1%;
@@ -213,6 +209,7 @@ a:first-child .project-title {
     padding: 0.5%;
 }
 
+/* These format for medium and small sized screens. It mostly making everything smaller and closer together */
 @media (min-width: 768px) and (max-width: 1024px) {
     .header, .section-heading {
         font-size: x-large;
