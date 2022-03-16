@@ -104,29 +104,18 @@ body {
 
 .project-image {
     filter: grayscale(50%);
-    animation-name: grayscale-out;
-    animation-duration: 0.5s;
+    /* animation-name: grayscale-out;
+    animation-duration: 0.5s; */
     border: rgb(14, 54, 41) solid 4px;
     max-width: 100%;
     max-height: 100%;
     border-radius: 15px;
     display: inline-block;
+    transition: ease-out 200ms;
 }
 
 .project-image:hover {
     filter: grayscale(0%);
-    animation-name: grayscale-in;
-    animation-duration: 0.5s;
-}
-
-@keyframes grayscale-in {
-    from {filter: grayscale(50%);}
-    to {filter: grayscale(0%);}
-}
-
-@keyframes grayscale-out {
-    from {filter: grayscale(0%);}
-    to {filter: grayscale(50%);}
 }
 
 /* This formats the project links */
