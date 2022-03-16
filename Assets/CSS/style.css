@@ -131,8 +131,9 @@ body {
 
 /* This formats the project links */
 .projects a {
-    max-width: 29%;
+    max-width: 30%;
     position: relative;
+    flex-grow: 1;
 }
 
 /* This makes the first project link larger than the rest */
@@ -154,6 +155,7 @@ a:first-child {
 /* This formats the main project slightly larger */
 a:first-child .project-title {
     font-size: xx-large;
+    max-width: 100%;
 }
 
 .pineapple-shirt {
