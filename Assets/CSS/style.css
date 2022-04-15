@@ -120,14 +120,9 @@ body {
 
 /* This formats the project links */
 .projects a {
-    max-width: 30%;
+    max-width: 100%;
     position: relative;
     flex-grow: 1;
-}
-
-/* This makes the first project link larger than the rest */
-a:first-child {
-    max-width: 100%;
 }
 
 /* This formats the headers attached to the project links */
@@ -172,6 +167,20 @@ a:first-child .project-title {
     padding: 1% 1%;
 }
 
+.mainProject {grid-area: main;}
+.project1 {grid-area: project1;}
+.project2 {grid-area: project2;}
+.project3 {grid-area: project3;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "main main main"
+        "main main main"
+        "project1 project2 project3";
+    gap: 15px;
+}
+
 #contact-me .content {
     width: 55%;
     justify-content: space-evenly;
@@ -185,7 +194,7 @@ a:first-child .project-title {
 
 #contact-me .content a {
     text-decoration: none;
-    color: #80b;
+    color:darkturquoise;
     margin: 0 40%;
     border-bottom: lightblue dotted 2px;
 }
