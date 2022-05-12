@@ -139,6 +139,11 @@ body {
     max-width: 100%;
     position: relative;
     flex-grow: 1;
+    transition: ease 300ms;
+}
+
+.projects a:hover {
+    transform: scale(1.03);
 }
 
 /* This formats the headers attached to the project links */
