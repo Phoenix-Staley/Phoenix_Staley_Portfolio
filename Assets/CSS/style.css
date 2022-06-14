@@ -18,6 +18,12 @@ body {
     background-color: #121212;
 }
 
+object {
+    height: 89vh;
+    width: 183vh;
+    margin-top: 10vh;
+}
+
 .header {
     text-align: center;
     display: inline-block;
